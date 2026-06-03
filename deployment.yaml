@@ -1,5 +1,5 @@
-apiVersion: apps/v1
-Kind: Service
+apiVersion: v1
+kind: Service
 metadata:
   name: order-svc
 spec:
@@ -28,8 +28,7 @@ spec:
     spec:
       containers:
         - name: order-service
-          image: gokumonkey/order-service:3
+          image: gokumonkey/order-service:4
           imagePullPolicy: Always
-
           ports:
-          - containerPort: 8002
+            - containerPort: 8002
