@@ -1,5 +1,7 @@
 pipeline{
-    agent any
+    agent {
+        label 'built-in'
+    }
     environment{
         DOCKER_USER ='gokumonkey'
         TOKEN = "dckr_pat_vHMjHr6LEPU-5_bZln8EdQf_HzY"
