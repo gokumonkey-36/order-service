@@ -15,4 +15,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["gunicorn", "-b", "0.0.0.0:8001", "app:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:8001", "order_service.wsgi:application"]
