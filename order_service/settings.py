@@ -51,9 +51,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': os.environ.get('DB_NAME', 'order_db'),
-        'USER': os.environ.get('DB_USER', 'root'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', 'Loki@123'),
-        'HOST': os.environ.get('DB_HOST', 'localhost'),
+        'USER': os.environ.get('DB_USER', 'admin'),
+        'PASSWORD': os.environ.get('DB_PASSWORD', 'admin1234'),
+        'HOST': os.environ.get('DB_HOST', 'database-1.c7yiu2agsq1h.ap-south-1.rds.amazonaws.com'),
         'PORT': os.environ.get('DB_PORT', '3306'),
     }
 }
