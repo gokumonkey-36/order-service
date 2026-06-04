@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
         - name: order-service
-          image: gokumonkey/order-service:4
+          image: gokumonkey/order-service:8
           imagePullPolicy: Always
           ports:
             - containerPort: 8002
